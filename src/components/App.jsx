@@ -1,5 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable require-jsdoc */
+
+import React from 'react';
+import logo from '../assets/logo.svg';
+import '../styles/normalize.css';
+import '../styles/App.css';
 
 function App() {
   return (
