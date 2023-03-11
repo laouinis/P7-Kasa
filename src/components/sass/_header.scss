@@ -1,0 +1,39 @@
+* {
+  font-family: "Montserrat";
+}
+
+.header {
+  width: auto;
+  height: 68px;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kasa-logo-img {
+  height: 68px;
+  width: 210px;
+}
+.nav-bar {
+  width: 309px;
+  height: 34px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.text {
+  font-size: 24px;
+  width: 116px;
+  text-decoration: none;
+  color: #FF6060;
+}
+
+a {
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+    color: #FF6060;
+  }
+}
