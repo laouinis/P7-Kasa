@@ -2,7 +2,6 @@
 /* eslint-disable require-jsdoc */
 import React from 'react';
 import logoFooter from '../assets/LOGO.png';
-import '../sass/_footer.scss';
 
 function Footer() {
   return (

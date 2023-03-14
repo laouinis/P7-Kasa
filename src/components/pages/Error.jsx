@@ -1,7 +1,7 @@
 /* eslint-disable require-jsdoc */
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '../sass/_error.scss';
+
 
 function Error() {
   return (

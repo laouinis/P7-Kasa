@@ -3,7 +3,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import LogementData from '../data/logementsList.json';
 import Banner from '../assets/banner1.png';
-import '../sass/_cards.scss';
 
 function Card() {
   return (
@@ -17,7 +16,7 @@ function Card() {
       </div>
       <div className='images_gallery'>
         {LogementData.map((logement) => (
-          <Link key={logement.id} to={`/LogementsFile/${logement.id}`}>
+          <Link key={logement.id} to={`/LogementFile/${logement.id}`}>
             <div className='key-box'
               style={{
                 backgroundImage:
