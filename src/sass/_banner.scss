@@ -1,0 +1,25 @@
+.kasa-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+  
+.banner-img {
+    max-width: 1240px;
+    color: white;
+    font-size: 48px;
+    display: flex;
+    width: 100%;
+    height: 220px;
+    background-position: center;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-size: cover;
+    background-color: #0000004d;
+    background-blend-mode: darken;
+    
+    margin-bottom: 50px;
+}

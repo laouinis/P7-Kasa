@@ -2,7 +2,7 @@
 /* eslint-disable require-jsdoc */
 import React from 'react';
 import {useState} from 'react';
-import '../sass/styles.scss';
+import '../styles/App.css';
 const icon = <i className="fa-solid fa-chevron-up"></i>;
 
 function Collapse({title, content, about}) {

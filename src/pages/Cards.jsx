@@ -2,18 +2,19 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import LogementData from '../data/logementsList.json';
-import Banner from '../assets/banner1.png';
+import Banner from './Banner';
 
 function Card() {
   return (
     <section className='gallery'>
-      <div className='kasa-body'>
+      <Banner source='../assets/banner1.png' />
+      {/* <div className='kasa-body'>
         <div className='banner-img'>
           <p style={{
             backgroundImage: `url(${(Banner)})`,
           }}>Chez vous, partout et ailleurs</p>
         </div>
-      </div>
+      </div> */}
       <div className='images_gallery'>
         {LogementData.map((logement) => (
           <Link key={logement.id} to={`/LogementFile/${logement.id}`}>

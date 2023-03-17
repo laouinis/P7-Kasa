@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import DefaultLayout from '../pages/DefaultLayout';
+import DefaultLayout from '../components/DefaultLayout';
 import Cards from '../pages/Cards';
-import BlankLayout from '../pages/BlankLayout';
+import BlankLayout from '../components/BlankLayout';
 import Apropos from '../pages/Apropos';
 import Error from '../pages/Error';
 

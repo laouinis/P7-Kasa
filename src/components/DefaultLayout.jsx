@@ -1,8 +1,8 @@
 /* eslint-disable require-jsdoc */
 import React from 'react';
-import Header from './Header';
+import Header from '../pages/Header';
 import {Outlet} from 'react-router-dom';
-import Footer from './Footer';
+import Footer from '../pages/Footer';
 
 function DefaultLayout() {
   return (
