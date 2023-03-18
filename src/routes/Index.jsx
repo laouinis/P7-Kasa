@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import DefaultLayout from '../components/DefaultLayout';
 import Cards from '../pages/Home';
-import LogementFile from '../pages/Logement';
+import Logement from '../pages/Logement';
 import Apropos from '../pages/Apropos';
 import Error from '../pages/Error';
 
@@ -16,7 +16,7 @@ const Router = () => {
             <Route path="/LogementsFile/:id"
               element={
                 <React.Fragment>
-                  <LogementFile />
+                  <Logement />
                 </React.Fragment>
               } />
           </Route>
