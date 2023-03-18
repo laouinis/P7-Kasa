@@ -26,5 +26,3 @@ Banner.defaultProps = {
 };
 
 export default Banner;
-
-

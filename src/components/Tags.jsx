@@ -17,7 +17,6 @@ function Tag({logement}) {
 Tag.propTypes = {
   logement: PropTypes.shape({
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
-    // Add PropTypes validation for other properties of 'logement' if needed
   }).isRequired,
 };
 
