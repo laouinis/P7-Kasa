@@ -1,8 +1,9 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import DefaultLayout from '../components/DefaultLayout';
-import Cards from '../pages/Home';
+import Home from '../pages/Home';
 import Logement from '../pages/Logement';
+// import Slideshow from '../components/Slideshow';
 import Apropos from '../pages/Apropos';
 import Error from '../pages/Error';
 
@@ -11,11 +12,12 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route element = {<DefaultLayout />}>
-          <Route path='/' element={(<Cards />)} />
+          <Route path='/' element={(<Home />)} />
           <Route path="/">
-            <Route path="/LogementsFile/:id"
+            <Route path="/LogementFile/:id"
               element={
                 <React.Fragment>
+                  {/* <Slideshow /> */}
                   <Logement />
                 </React.Fragment>
               } />
