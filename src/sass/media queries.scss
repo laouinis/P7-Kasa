@@ -1,21 +1,21 @@
-@media screen and (min-width: 768px) {
+@media screen and (280px <= width <= 375px) {
 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (376px <= width <= 768px) {
 
 }
 
-@media screen and (min-width: 1180px) {
+@media screen and (769px <= width <= 992px) { 
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (993px <= width <= 1200px) {
 
 }
 
-@media screen and (min-width: 1600px) {
-  
+@media screen and (1201px <= width <= 1239px) {
+
 }
 
 .loader-calc {

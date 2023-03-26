@@ -1,7 +1,7 @@
 .accordion {
   margin: 0 auto;
   max-width: 1120px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -10,9 +10,8 @@
   width:auto;
   height: 15px;
   font-weight: 500;
-  font-weight: bold;
   font-size: 24px;
-  padding: 25px;
+  padding: 16px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -72,47 +71,65 @@
   border-radius: 10px;
 }
 
-@media screen and (280px <= width <= 376px) {
-  
+@media screen and (280px <= width <= 375px) {
+  .accordion {
+    margin: 0 10px;
+    margin-bottom: 230px;    
+  }
+  .collapse-container {
+    width: 88%;
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .accordion-title {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
 }
 
-@media screen and (768px >= width) {
+@media screen and (376px <= width <= 768px) {
   .accordion {
-    width: 90%;
     margin: 0 20px;
-    margin-bottom: 347px;    
+    margin-bottom: 215px;    
   }
-
   .collapse-container {
     height: auto;
     margin-bottom: 20px;
-    width: 100%;
   }
-
   .accordion-title {
     padding: 6px 12px;
     font-size: 13px;
   }
 }
 
-@media screen and (768px <= width <= 992px) {
+@media screen and (769px <= width <= 992px) {
   .accordion {
-    width: 96%;
+    width: auto;
     margin: 0 20px;
-    margin-bottom: 20px;    
+    margin-bottom: 190px;    
   }
-
-
-
+  .collapse-container {
+    height: auto;
+    margin-bottom: 20px;
+  }
   .accordion-title {
     padding: 6px 12px;
     font-size: 13px;
   }
 }
 
-@media screen and (992px <= width <= 1200px ) {
+@media screen and (993px <= width <= 1200px ) {
   .accordion {
     height: auto;
+    width: 85%;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (1201px <= width <= 1239px) {
+  .accordion {
+    height: auto;
+    width: 85%;
     margin-top: 32px;
   }
 }
