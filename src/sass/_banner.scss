@@ -84,7 +84,7 @@
   }
 }
 
-@media screen and (768px <= width <= 992px) { 
+@media screen and (769px <= width <= 992px) { 
   .banner {
     width: 96%;
     height: 111px;
@@ -99,16 +99,30 @@
   }
 }
 
-@media screen and (992px <= width <= 1200px) {
+@media screen and (993px <= width <= 1200px) {
   .banner {
-    height: 111px;
+    height: 223px;
     margin: 0 40px;
   }
   .banner-text {
-    width: auto;
-    font-size: 26px;
+    width: 90%;
+    font-size: 48px;
     top: 50%;
-    left: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (1201px <= width <= 1239px) {
+  .banner {
+    height: 223px;
+    margin: 0 40px;
+  }
+  .banner-text {
+    width: 90%;
+    font-size: 48px;
+    top: 50%;
+    left: 62%;
     transform: translate(-50%, -50%);
   }
 }

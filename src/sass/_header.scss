@@ -4,9 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1240px;
   margin: 40px auto 0 auto;
   width: 100%;
+  max-width: 1240px;
 }
 
 .kasa-logo-img {
@@ -114,7 +114,7 @@
   }
 } 
 
-@media screen and (1200px <= width) {
+@media screen and (1201px <= width <= 1239px) {
   .header {
     width: auto;
     margin: 40px;
