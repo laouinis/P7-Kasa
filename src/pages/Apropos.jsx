@@ -9,14 +9,19 @@ import '../styles/App.css';
 
 function Apropos() {
   return (
-    <React.Fragment>
-      <Banner image={banner2} showText={false}/>
-      <main className='accordion'>
-        {CollapseData.map((item, index) => (
-          <Collapse key={index} {...item} />
-        ))}
-      </main>
-    </React.Fragment>
+    <section className='container'>
+      <div className="footer-banner-image">
+        <React.Fragment>
+          <Banner image={banner2} showText={false}/>
+          <main className='accordion'>
+            {CollapseData.map((item, index) => (
+              <Collapse key={index} {...item} />
+            ))}
+          </main>
+        </React.Fragment>
+      </div>
+    </section>
+
   );
 }
 

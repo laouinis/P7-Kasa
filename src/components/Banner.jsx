@@ -3,8 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Banner(props) {
-  console.log(props);
   return (
+    // <section className='container'>
     <div className='kasa-body'>
       <div className='banner'>
         <div className='banner-img' style={{backgroundImage:
@@ -13,6 +13,7 @@ function Banner(props) {
         <p className='banner-text'>Chez vous, partout et ailleurs</p>}
       </div>
     </div>
+    // </section>
   );
 }
 

@@ -29,9 +29,7 @@ function Rate({logement}) {
 }
 
 Rate.propTypes = {
-  logement: PropTypes.number.isRequired,
+  logement: PropTypes.number,
 };
 
 export default Rate;
-
-
