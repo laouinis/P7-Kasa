@@ -116,9 +116,26 @@ body {
     height: 47px;
   }
 }
-@media screen and (993px <= width) {
+@media screen and (993px <= width <= 1200px) {
   .header {
     width: auto;
+    height: 60px;
+    margin: 40px;
+    list-style: none;
+    font-size: 16px;
+    align-items: normal;
+  }
+  .header a {
+    width: auto;
+    height: 17px;
+    margin-right: 10px;
+  }
+  .header .kasa-logo-img {
+    width: 180px;
+    height: 56px;
+  }
+  .nav-bar {
+    align-items: center;
   }
 }
 .kasa-body {
@@ -222,7 +239,7 @@ body {
 @media screen and (992px <= width <= 1200px) {
   .banner {
     height: 111px;
-    margin: 0 20px;
+    margin: 0 40px;
   }
   .banner-text {
     width: auto;
