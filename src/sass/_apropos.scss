@@ -1,0 +1,19 @@
+.footer-banner-image {
+  .banner {
+    width: 90%;
+    height: 223px;
+  }
+}
+
+@media screen and (280px <= width <= 445px) {
+    
+}
+
+@media screen and (768px <= width <= 992px) {
+  .footer-banner-image {
+    .banner {
+      width: 95%;
+      margin-bottom: 20px;
+    }
+  }
+}

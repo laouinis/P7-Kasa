@@ -1,10 +1,13 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 1240px;
-  margin: 0 auto;
 }
 
 .images_gallery {
@@ -17,6 +20,7 @@
   width: 100%;
   padding-top: 20px;
   margin-top: 30px;
+  margin-bottom: 30px;
   a {
     width: 340px;
     height: 340px;
@@ -55,4 +59,37 @@
 
 .kasa-body {
   width: 100%;
+}
+
+@media screen and (768px >= width) {
+  .images_gallery {
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    padding: 0;
+    margin: 0;
+    a {
+      width: 94%;
+      height: 255px;
+      margin: 0 20px 20px 20px;
+    }
+  }
+}
+
+@media screen and (768px <= width <= 992px) {
+  .images_gallery {
+    background-color: #ffffff;
+    a {
+      height: 255px;
+      margin: 20px;
+    }
+  }
+
+  .key-box {
+    width: auto;
+  }
+
+  .kasa-body {
+    width: 100%;
+  }
 }

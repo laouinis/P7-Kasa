@@ -1,33 +1,41 @@
 .error {
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #FF6060;
+  margin: 15% auto;
 }
 
 .error_title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 264px;
   font-size: 288px;
-  font-weight: 700;
-  color: #FF6060;
-  margin-top: 166px;
-  margin-bottom: 58px;
+  margin: 0 auto;
 }
 
 .error_text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 154px;
   font-size: 36px;
-  width: auto;
-  height: 52px;
-  color: #FF6060;  
-  margin-bottom: 168px;
 }
 
 .errorBack {
-  font-size: 18px;
-  color: #FF6060;
-  text-decoration: underline;
-  padding-bottom: 25px;
+  color:#FF6060;
+  margin-bottom: 130px;
+}
+
+@media screen and (768px >= width) {
+  .error {
+    margin-top: 195px;
+  }
+
+  .error_title {
+    font-size: 96px;
+  }
+
+  .error_text {
+    font-size: 18px;
+    margin: 0 15% 130px 15%;
+    text-align: center;
+  }
 }
