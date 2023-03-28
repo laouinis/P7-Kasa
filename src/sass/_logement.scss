@@ -10,15 +10,19 @@
 }
 
 .logement-info {
+  width: auto;
+
   h1 {
     margin: 0;
     font-size: 36px;
     color: #FF6060;
   }
+
   h2 {
-  font-size: 18px;
-  color: #FF6060;
+    font-size: 18px;
+    color: #FF6060;
   }
+
 }
 
 .tag {
@@ -85,48 +89,50 @@
   }
 
   .accordion-content {
-  width: 549px;
- }
-
-}
-@media screen and (280px <= width <= 376px) {
-  .logement-collapse {
-    width: 92%;
-    .accordion-content {
-      width: 98%;
-    }  
+    width: 549px;
   }
+
 }
 
-@media screen and (768px >= width) {
+@media screen and (280px <= width <= 375px) {
   .container-logement {
     margin-top: 0;
   }
+
   .container-logement-info {
     flex-direction: column;
   }
+
   .container-logement {
     margin: 0 20px;
     margin-top: 15px;
-    margin-bottom: 150px;
+    margin-bottom: 10px;
   }
 
   .logement-info {
     h1 {
       margin: 0;
       font-size: 18px;
-      max-width: 90%;
+      max-width: 100%;
     }
+
     h2 {
+      margin-top: 5px;
     font-size: 14px;
     }
+
   }
 
   .container-tag {
+    display: flex;
+    width: auto;
+    height: 18px;
     font-size: 10px;
+    align-items: center;
   }
 
   .tag {
+    height: auto;
     margin-top: 10px;
   }
 
@@ -153,14 +159,207 @@
 
   .logement-host-name-picture {
     justify-content: flex-end;
-    width: 80px;
+    width: 90px;
   }
 
   .logement-collapse {
     flex-direction: column;
+    width: 100%;
     margin: 0;
-    margin-right: 20px;
+    margin-bottom: 134px;
+    .collapse-container {
+      width: 92.5%;
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    .accordion-title {
+      font-size: 13px;
+      padding: 6px 12px;
+      width: 100%;
+    }
   
+    .accordion-content {
+      width: 98%;
+    }  
+
+  }
+
+}
+
+@media screen and (376px <= width <= 768px) {
+  .container-logement {
+    margin-top: 0;
+  }
+
+  .container-logement-info {
+    flex-direction: column;
+  }
+
+  .container-logement {
+    margin: 0 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .logement-info {
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      max-width: 100%;
+    }
+
+    h2 {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+
+  }
+
+  .container-tag {
+    display: flex;
+    width: auto;
+    height: 18px;
+    font-size: 14px;
+    align-items: center;
+  }
+
+  .tag {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .container-more-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;   
+    align-items: center; 
+    margin-bottom: 16px;
+  }
+
+  .host-picture {
+    height: 32px;
+    width: 32px;
+  }
+
+  .logement-host-name {
+    font-size: 12px;
+  }
+
+  .logement-rating {
+    margin: 0;
+  }
+
+  .logement-host-name-picture {
+    justify-content: flex-end;
+    width: 90px;
+  }
+
+  .logement-collapse {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 148px;
+    .collapse-container {
+      width: 96.5%;
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    .accordion-title {
+      font-size: 13px;
+      padding: 6px 12px;
+      width: 100%;
+    }
+  
+    .accordion-content {
+      width: 98%;
+    }  
+
+  }
+
+}
+
+@media screen and (769px <= width <= 992px) {
+  .container-logement {
+    margin-top: 0;
+  }
+
+  .container-logement-info {
+    margin: 0 20px;
+    flex-direction: column;
+  }
+
+  .container-logement {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .logement-info {
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      max-width: 100%;
+    }
+
+    h2 {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+
+  }
+
+  .container-tag {
+    display: flex;
+    width: auto;
+    height: 18px;
+    font-size: 14px;
+    align-items: center;
+  }
+
+  .tag {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .container-more-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;   
+    align-items: center; 
+    margin-bottom: 16px;
+    margin: 0;
+  }
+
+  .host-picture {
+    height: 48px;
+    width: 48px;
+  }
+
+  .logement-host-name {
+    font-size: 15px;
+  }
+
+  .logement-rating {
+    margin: 0;
+  }
+
+  .logement-host-name-picture {
+    justify-content: flex-end;
+    width: 90px;
+  }
+
+  .logement-collapse {
+    flex-direction: column;
+    width: 96%;
+    margin: 0 20px;
+    margin-bottom: 123px;
+    .collapse-container {
+      width: 97%;
+      margin: 0;
+      margin-top: 20px;
+    }
+
     .accordion-title {
       font-size: 13px;
       padding: 6px 12px;
@@ -173,66 +372,64 @@
   }
 }
 
-@media screen and (768px <= width <= 992px) {
-  .logement-collapse {
-    flex-direction: column;
-    width: 850px;
-    margin: 0 20px;
-
-    .accordion-title {
-      font-size: 13px;
-      padding: 6px 12px;
-      width: 100%;
-    }
-  
-    .accordion-content {
-      width: 100%;
-   }
-
+@media screen and (993px <= width <= 1200px) {
+  .container-logement {
+    margin: 0 40px;
   }
 
-  .logement-rating {
-    margin-top: 5px;
+  .container-logement-info {
+    margin: 20px 0;
   }
-
   .logement-info {
     h1 {
       margin: 0;
+      font-size: 28px;
+      max-width: 100%;
+    }
+
+    h2 {
+      margin-top: 5px;
       font-size: 20px;
     }
-    h2 {
+
+  }
+
+  .container-tag {
     font-size: 16px;
-    }
   }
 
-  .container-logement-info {
-    width: 95%;
-    margin: 0 20px;
+  .tag {
+    margin-top: 10px;
   }
 
-}
+  .host-picture {
+    height: 54px;
+    width: 54px;
+  }
 
-@media screen and (992px <= width <= 1240px) {
+  .logement-host-name {
+    font-size: 18px;
+  }
+
   .logement-collapse {
-    // flex-direction: column;
+    justify-content: space-between;
     width: auto;
-    margin: 0 20px;
+    margin-bottom: 20px;
+    .collapse-container {
+      width: 45%;
+      margin-top: 20px;
+    }
 
     .accordion-title {
-      font-size: 13px;
+      font-size: 15px;
       padding: 6px 12px;
-      width: 100%;
-    }
-  
+      width: 95%;
+    }  
+
     .accordion-content {
-    width: 100%;
-   }
+      width: 98%;
+    }  
 
-  }
-
-  .container-logement-info {
-    width: 94%;
-    margin: 0 20px;
   }
 
 }
