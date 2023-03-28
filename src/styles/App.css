@@ -858,7 +858,7 @@ body {
 .accordion {
   margin: 0 auto;
   max-width: 1120px;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   display: flex;
   flex-direction: column;
 }
@@ -1023,7 +1023,7 @@ body {
   flex-direction: column;
   align-items: center;
   color: #FF6060;
-  margin: 15% auto;
+  margin: 20px auto;
 }
 
 .error_title {
@@ -1035,13 +1035,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 154px;
+  margin-bottom: 106px;
   font-size: 36px;
 }
 
 .errorBack {
   color: #FF6060;
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
 
 @media screen and (768px >= width) {
