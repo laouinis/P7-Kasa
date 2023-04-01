@@ -460,7 +460,7 @@ body {
   width: 560px;
 }
 .logement-collapse .accordion-content {
-  width: 549px;
+  width: 557px;
 }
 
 @media screen and (280px <= width <= 375px) {
@@ -1095,7 +1095,7 @@ body {
 @media screen and (280px <= width <= 375px) {
   .accordion {
     margin: 0 10px;
-    margin-bottom: 230px;
+    margin-bottom: 240px;
   }
   .collapse-container {
     width: 88%;
@@ -1110,7 +1110,7 @@ body {
 @media screen and (376px <= width <= 768px) {
   .accordion {
     margin: 0 20px;
-    margin-bottom: 215px;
+    margin-bottom: 220px;
   }
   .collapse-container {
     height: auto;
