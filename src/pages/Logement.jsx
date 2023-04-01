@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 import React, {useEffect, useState} from 'react';
 import {useParams, useNavigate} from 'react-router-dom';
 import LogementData from '../data/logementsList.json';
@@ -6,6 +5,11 @@ import Collapse from '../components/Collapse';
 import Tags from '../components/Tags';
 import Rate from '../components/Rates';
 
+/**
+ * React component to display Logement details
+ * @Function
+ * @return {JSX.Element}
+ */
 function Logement() {
   const [logement, setLogement] = useState({
     tags: [],

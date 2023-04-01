@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 import React, {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
 import {FiChevronLeft, FiChevronRight} from 'react-icons/fi';
@@ -6,7 +5,10 @@ import data from '../data/logementsList.json';
 import 'react-slideshow-image/dist/styles.css';
 import '../sass/_slideshow.scss';
 
-
+/**
+ * Component for displaying a slideshow of pictures for a given rental property.
+ * @return {JSX.Element} - The Slideshow component.
+*/
 function Slideshow() {
   const [logement, setLogement] = useState({
     tags: [],
@@ -76,7 +78,6 @@ function Slideshow() {
         </div>
       </section>
     </section>
-
   );
 }
 

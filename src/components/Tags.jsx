@@ -1,8 +1,13 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Component that displays tags.
+ * @param {object} props - The component props.
+ * @param {array} props.tags - An array of strings representing
+    the tags to be displayed.
+ * @return {JSX.Element} - The tag component.
+*/
 function Tag({tags}) {
   const tagMap = tags.map((event, index) => (
     <div className="container-tag" key={event}>

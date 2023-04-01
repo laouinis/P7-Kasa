@@ -1,10 +1,13 @@
-/* eslint-disable require-jsdoc */
 import React from 'react';
 import {Link} from 'react-router-dom';
 import LogementData from '../data/logementsList.json';
 import Banner from '../components/Banner';
 import banner1 from '../assets/banner1.png';
 
+/**
+* Home component that displays a gallery of house listings with a banner.
+* @return {JSX.Element} - The home component.
+*/
 function Home() {
   return (
     <section className='container'>

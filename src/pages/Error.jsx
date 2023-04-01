@@ -1,8 +1,11 @@
-/* eslint-disable require-jsdoc */
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-
+/**
+* Error component that displays a 404 page with an error message
+  and a link to the homepage.
+* @return {JSX.Element} - The error component.
+*/
 function Error() {
   return (
     <section className='container'>

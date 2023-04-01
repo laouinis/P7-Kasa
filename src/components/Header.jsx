@@ -1,8 +1,11 @@
-/* eslint-disable require-jsdoc */
 import React from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../assets/LOGO.png';
 
+/**
+ * Renders the header of the Kasa website.
+ * @return {JSX.Element} The JSX header component.
+*/
 function Header() {
   return (
     <section className='container'>
