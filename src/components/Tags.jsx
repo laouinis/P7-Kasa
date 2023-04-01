@@ -3,10 +3,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Tag({logement}) {
-  const tagMap = logement.tags.map((event, index) => (
+function Tag({tags}) {
+  const tagMap = tags.map((event, index) => (
     <div className="container-tag" key={event}>
-      {logement.tags[index]}
+      {tags[index]}
     </div>
   ));
 
@@ -16,9 +16,7 @@ function Tag({logement}) {
 }
 
 Tag.propTypes = {
-  logement: PropTypes.shape({
-    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
-  }).isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Tag;
