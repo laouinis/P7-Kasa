@@ -8,6 +8,10 @@
   box-sizing: inherit;
 }
 
+#root {
+  height: 100%;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -20,6 +24,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-grow: 1;
+  height: 100%;
+}
+
+.main-container {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  flex: 1 1;
+  flex-grow: 1;
 }
 
 .header {
@@ -30,7 +45,6 @@ body {
   align-items: center;
   margin: 40px auto 0 auto;
   width: 100%;
-  max-width: 1240px;
 }
 
 .kasa-logo-img {
@@ -38,14 +52,14 @@ body {
 }
 
 .nav-bar {
-  padding-left: 32px;
   list-style: none;
   display: flex;
   font-size: 24px;
 }
 .nav-bar a {
   height: 34px;
-  width: 136px;
+  width: auto;
+  margin-left: 57px;
   text-decoration: none;
   color: #FF6060;
 }
@@ -54,7 +68,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (280px <= width <= 386px) {
+@media screen and (280px <= width <= 334px) {
   .header {
     width: auto;
     margin: 20px;
@@ -77,25 +91,28 @@ body {
     justify-content: flex-start;
   }
 }
-@media screen and (376px <= width <= 768px) {
+@media screen and (335px <= width <= 768px) {
   .header {
-    width: auto;
+    align-items: center;
     margin: 20px;
-  }
-  .header ul {
-    margin: 0;
-  }
-  .header ul a {
-    margin-left: 10px;
-    font-size: 18px;
-  }
-  .header a {
     width: auto;
-    height: 100%;
   }
   .kasa-logo-img {
-    width: 145px;
-    height: 100%;
+    height: 38px;
+  }
+  .nav-bar {
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+  }
+  .nav-bar a {
+    height: 34px;
+    width: auto;
+    margin-left: 10px;
+  }
+  .nav-bar a :hover {
+    border-bottom: 2px solid #FF6060;
+    cursor: pointer;
   }
 }
 @media screen and (769px <= width <= 992px) {
@@ -103,12 +120,11 @@ body {
     width: auto;
     height: 74px;
     margin: 20px;
-    list-style: none;
     font-size: 16px;
   }
   .kasa-logo-img {
-    width: 145px;
-    height: 47px;
+    width: auto;
+    height: 100%;
   }
 }
 @media screen and (993px <= width <= 1200px) {
@@ -263,12 +279,6 @@ body {
     transform: translate(-50%, -50%);
   }
 }
-.container {
-  max-width: 1240px;
-  height: auto;
-  margin: 0 auto;
-}
-
 .gallery {
   display: flex;
   flex-direction: row;
@@ -327,33 +337,40 @@ body {
   width: 100%;
 }
 
-@media screen and (768px >= width) {
+@media screen and (280px <= width <= 400px) {
   .images_gallery {
     background-color: #ffffff;
-    justify-content: space-evenly;
-    border-radius: 25px;
+    margin: 0 20px;
     padding: 0;
-    margin: 0;
   }
   .images_gallery a {
-    width: 94%;
-    height: 255px;
-    margin: 0 20px 20px 20px;
+    width: 100%;
+    height: 340px;
+    margin: 10px;
   }
 }
-@media screen and (768px <= width <= 992px) {
+@media screen and (401px <= width <= 768px) {
   .images_gallery {
     background-color: #ffffff;
+    margin-top: 10px;
+    padding: 0;
   }
   .images_gallery a {
-    height: 255px;
-    margin: 20px;
-  }
-  .key-box {
-    width: auto;
-  }
-  .kasa-body {
     width: 100%;
+    height: 340px;
+    margin: 10px 20px;
+  }
+}
+@media screen and (769px <= width <= 992px) {
+  .images_gallery {
+    margin: 0 20px;
+    margin-top: 20px;
+  }
+}
+@media screen and (993px <= width <= 1200px) {
+  .images_gallery {
+    margin: 0 40px;
+    margin-top: 40px;
   }
 }
 .container-logement {
@@ -434,6 +451,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-grow: 1;
   margin-bottom: 100px;
 }
 .logement-collapse .accordion-title {
@@ -518,7 +536,153 @@ body {
     width: 98%;
   }
 }
-@media screen and (376px <= width <= 768px) {
+@media screen and (376px <= width <= 386px) {
+  .container-logement {
+    margin-top: 0;
+  }
+  .container-logement-info {
+    flex-direction: column;
+  }
+  .container-logement {
+    margin: 0 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .logement-info h1 {
+    margin: 0;
+    font-size: 24px;
+    max-width: 100%;
+  }
+  .logement-info h2 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .container-tag {
+    display: flex;
+    width: auto;
+    height: 18px;
+    font-size: 14px;
+    align-items: center;
+  }
+  .tag {
+    height: auto;
+    margin-top: 10px;
+  }
+  .container-more-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .host-picture {
+    height: 32px;
+    width: 32px;
+  }
+  .logement-host-name {
+    font-size: 12px;
+  }
+  .logement-rating {
+    margin: 0;
+  }
+  .logement-host-name-picture {
+    justify-content: flex-end;
+    width: 90px;
+  }
+  .logement-collapse {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 124px;
+  }
+  .logement-collapse .collapse-container {
+    width: 96.5%;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .logement-collapse .accordion-title {
+    font-size: 13px;
+    padding: 6px 12px;
+    width: 100%;
+  }
+  .logement-collapse .accordion-content {
+    width: 98%;
+  }
+}
+@media screen and (387px <= width <= 518px) {
+  .container-logement {
+    margin-top: 0;
+  }
+  .container-logement-info {
+    flex-direction: column;
+  }
+  .container-logement {
+    margin: 0 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .logement-info h1 {
+    margin: 0;
+    font-size: 24px;
+    max-width: 100%;
+  }
+  .logement-info h2 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .container-tag {
+    display: flex;
+    width: auto;
+    height: 18px;
+    font-size: 14px;
+    align-items: center;
+  }
+  .tag {
+    height: auto;
+    margin-top: 10px;
+  }
+  .container-more-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .host-picture {
+    height: 32px;
+    width: 32px;
+  }
+  .logement-host-name {
+    font-size: 12px;
+  }
+  .logement-rating {
+    margin: 0;
+  }
+  .logement-host-name-picture {
+    justify-content: flex-end;
+    width: 90px;
+  }
+  .logement-collapse {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 120px;
+  }
+  .logement-collapse .collapse-container {
+    width: 96.5%;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .logement-collapse .accordion-title {
+    font-size: 13px;
+    padding: 6px 12px;
+    width: 100%;
+  }
+  .logement-collapse .accordion-content {
+    width: 98%;
+  }
+}
+@media screen and (519px <= width <= 768px) {
   .container-logement {
     margin-top: 0;
   }
@@ -1008,13 +1172,14 @@ body {
 }
 
 .logo-kasa-footer {
-  width: 122px;
+  width: auto;
   height: 40px;
   filter: brightness(5);
 }
 
-@media screen and (280px <= width <= 992px) {
+@media screen and (335px <= width <= 992px) {
   .footer-text {
+    width: 90%;
     font-size: 12px;
   }
 }
@@ -1044,16 +1209,55 @@ body {
   margin-bottom: 100px;
 }
 
-@media screen and (768px >= width) {
+@media screen and (280px <= width <= 375px) {
   .error {
-    margin-top: 195px;
+    margin-top: 60px;
   }
   .error_title {
     font-size: 96px;
   }
   .error_text {
     font-size: 18px;
-    margin: 0 15% 130px 15%;
+    margin: 0 5% 130px 5%;
+    text-align: center;
+  }
+}
+@media screen and (376px <= width <= 645px) {
+  .error {
+    margin-top: 60px;
+  }
+  .error_title {
+    font-size: 96px;
+  }
+  .error_text {
+    font-size: 24px;
+    margin: 0 5% 130px 5%;
+    text-align: center;
+  }
+}
+@media screen and (646px <= width <= 768px) {
+  .error {
+    margin-top: 60px;
+  }
+  .error_title {
+    font-size: 96px;
+  }
+  .error_text {
+    font-size: 24px;
+    margin: 0 5% 130px 5%;
+    text-align: center;
+  }
+}
+@media screen and (769px <= width <= 1200px) {
+  .error {
+    margin-top: 60px;
+  }
+  .error_title {
+    font-size: 96px;
+  }
+  .error_text {
+    font-size: 24px;
+    margin: 0 5% 130px 5%;
     text-align: center;
   }
 }
