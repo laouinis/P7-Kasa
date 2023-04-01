@@ -4,13 +4,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Star from '../assets/Star.png';
 import StarEmpty from '../assets/StarEmpty.png';
-function Rate({logement}) {
+function Rate({rating}) {
   const ratingScore = [1, 2, 3, 4, 5];
+  console.log(rating);
   return (
     <div>
       {ratingScore.map((ratingElem) =>
 
-        logement >= ratingElem ? (
+        rating >= ratingElem ? (
           <img
             src={Star}
             key={ratingElem.toString()}
@@ -27,9 +28,8 @@ function Rate({logement}) {
     </div>
   );
 }
-
 Rate.propTypes = {
-  logement: PropTypes.number,
+  rating: PropTypes.number,
 };
 
 export default Rate;
