@@ -1,70 +1,71 @@
 /* eslint-disable require-jsdoc */
 
 import React, {useEffect, useState} from 'react';
-import {useParams} from 'react-router-dom';
+import {useParams, useNavigate} from 'react-router-dom';
 import LogementData from '../data/logementsList.json';
 import Collapse from '../components/Collapse';
 import Tags from '../components/Tags';
 import Rate from '../components/Rates';
-import Error from './Error';
+// import Error from './Error';
 
 function Logement() {
   const [logement, setLogement] = useState({
-    tag: [],
+    tags: [],
+    title: '',
     equipments: [],
     pictures: [],
-    rating: '',
+    rating: 0,
     host: {name: '', picture: ''},
+    description: '',
+    location: '',
   });
 
+  const [isError, setIsError]= useState(false);
   const {id} = useParams();
-  useEffect(() => {
-    LogementData.map((house) => {
-      if (house.id === id) {
-        setLogement(house);
-      }
-      return null;
-    });
-  }, [id]);
-  if (logement.title === undefined) {
-    return <Error />;
-  }
+  const navigate = useNavigate();
+  // eslint-disable-next-line no-unused-vars
 
-  const logementDescription = logement.description;
-  const logementTitle = logement.title;
-  const logementEquipments = logement.equipments;
-  const logementLocation = logement.location;
-  const logementHostName = logement.host.name;
-  const logementHostPicture = logement.host.picture;
-  const logementRating = Number(logement.rating);
-  const mapLogementEquipment = logementEquipments.map((l, index) => (
-    <p className='logement-equipment-p'
-      key={index}>{logement.equipments[index]}</p>
-  ));
+  useEffect(() => {
+    if (Array.isArray(LogementData) && LogementData.length > 0) {
+      const house = LogementData.find((house) => house.id === id);
+      if (house) {
+        setLogement(house);
+      } else {
+        setIsError(true);
+      }
+    }
+  }, [id]);
+  useEffect(() => {
+    if (isError) {
+      console.log('test');
+      navigate('/Error');
+    }
+  }, [isError, navigate]);
+  console.log(logement);
 
   return (
     <section className='container'>
       <div className='container-logement'>
         <figure className='container-logement-info'>
           <div className="logement-info">
-            <h1>{logementTitle}</h1>
-            <h2>{logementLocation}</h2>
+            <h1>{logement.title}</h1>
+            <h2>{logement.location}</h2>
             <div className="container-tags">
-              <Tags logement={logement} />
+              <Tags tags={logement.tags} />
             </div>
           </div>
 
           <figcaption className='container-more-info'>
             <div className="logement-host-name-picture">
-              <h3 className='logement-host-name'>{logementHostName}</h3>
+              <h3 className='logement-host-name'>{logement.host.name}</h3>
               <img className='host-picture'
-                src={logementHostPicture}
+                src={logement.host.picture}
                 alt="pict of the host"
               />
             </div>
 
             <div className="logement-rating">
-              <Rate logement={logementRating} />
+              <Rate rating= {parseInt(logement.rating)} />
             </div>
           </figcaption>
         </figure>
@@ -73,14 +74,14 @@ function Logement() {
           <Collapse className='logement-collapse-item'
             about={false}
             title='Description'
-            content={logementDescription} />
+            content={logement.description} />
 
           <Collapse className='logement-collapse-item'
             about={false}
             title='Equipments'
             content=
               {<div className='collapse-equipments'>
-                {mapLogementEquipment}
+                {logement.equipments}
               </div>}
           />
         </div>
