@@ -20,13 +20,14 @@
 }
 
 .logo-kasa-footer {
-  width: 122px;
+  width: auto;
   height: 40px;
   filter: brightness(5);
 }
 
-@media screen and (280px <= width <= 992px) {
+@media screen and (335px <= width <= 992px) {
   .footer-text {
+    width: 90%;
     font-size: 12px;
   }
 }

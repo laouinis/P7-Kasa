@@ -24,9 +24,9 @@
   margin-bottom: 100px;
 }
 
-@media screen and (768px >= width) {
+@media screen and (280px <= width <= 375px) {
   .error {
-    margin-top: 195px;
+    margin-top: 60px;
   }
 
   .error_title {
@@ -35,7 +35,75 @@
 
   .error_text {
     font-size: 18px;
-    margin: 0 15% 130px 15%;
+    margin: 0 5% 130px 5%;
     text-align: center;
   }
+
+  .errorBack {
+    // margin-bottom: 303px;
+  }
+}
+
+@media screen and (376px <= width <= 645px) {
+  .error {
+    margin-top: 60px;
+  }
+
+  .error_title {
+    font-size: 96px;
+  }
+
+  .error_text {
+    font-size: 24px;
+    margin: 0 5% 130px 5%;
+    text-align: center;
+  }
+
+  .errorBack {
+    // margin-bottom: 294px;
+  }
+}
+
+@media screen and (646px <= width <= 768px) { 
+  .error {
+    margin-top: 60px;
+  }
+
+  .error_title {
+    font-size: 96px;
+  }
+
+  .error_text {
+    font-size: 24px;
+    margin: 0 5% 130px 5%;
+    text-align: center;
+  }
+
+  .errorBack {
+    // margin-bottom: 321px;
+  }
+}
+
+@media screen and (769px <= width <= 1200px) {
+  .error {
+    margin-top: 60px;
+  }
+
+  .error_title {
+    font-size: 96px;
+  }
+
+  .error_text {
+    font-size: 24px;
+    margin: 0 5% 130px 5%;
+    text-align: center;
+  }
+
+  .errorBack {
+    // margin-bottom: 321px;
+  }
+}
+
+@media screen and (1201px <= width <= 1239px) {
+
 }
