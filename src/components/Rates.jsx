@@ -11,7 +11,6 @@ import StarEmpty from '../assets/StarEmpty.png';
 */
 function Rate({rating}) {
   const ratingScore = [1, 2, 3, 4, 5];
-  console.log(rating);
   return (
     <div>
       {ratingScore.map((ratingElem) =>
