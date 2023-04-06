@@ -18,6 +18,7 @@ function Collapse({title, content, about}) {
   const chevronState = () => {
     setActive(!isActive);
   };
+
   return (
     <div className={`${about ? 'about-collapse-container' :
       `collapse-container`} ${isActive && 'active'}`}>
