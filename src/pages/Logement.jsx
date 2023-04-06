@@ -65,7 +65,7 @@ function Logement() {
             </div>
 
             <div className="logement-rating">
-              <Rate rating= {parseInt(logement.rating)} />
+              <Rate rating={parseInt(logement.rating)} />
             </div>
           </figcaption>
         </figure>
@@ -78,16 +78,19 @@ function Logement() {
 
           <Collapse className='logement-collapse-item'
             about={false}
-            title='Equipments'
+            title='Équipements'
             content=
               {<div className='collapse-equipments'>
-                {logement.equipments}
+                <ul className="equipments-list">
+                  {logement.equipments.map((equipment) => (
+                    <li key={equipment}>{equipment}</li>
+                  ))}
+                </ul>
               </div>}
           />
         </div>
       </div>
     </section>
-
   );
 }
 
