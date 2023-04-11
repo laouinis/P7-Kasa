@@ -21,7 +21,7 @@
 
 .errorBack {
   color:#FF6060;
-  margin-bottom: 100px;
+  margin-bottom: 118px;
 }
 
 @media screen and (280px <= width <= 375px) {
@@ -39,14 +39,12 @@
     text-align: center;
   }
 
-  .errorBack {
-    // margin-bottom: 303px;
-  }
 }
 
 @media screen and (376px <= width <= 645px) {
   .error {
-    margin-top: 60px;
+    margin-top: 60px;    
+    margin-bottom: 199px;
   }
 
   .error_title {
@@ -57,10 +55,6 @@
     font-size: 24px;
     margin: 0 5% 130px 5%;
     text-align: center;
-  }
-
-  .errorBack {
-    // margin-bottom: 294px;
   }
 }
 
@@ -78,10 +72,6 @@
     margin: 0 5% 130px 5%;
     text-align: center;
   }
-
-  .errorBack {
-    // margin-bottom: 321px;
-  }
 }
 
 @media screen and (769px <= width <= 1200px) {
@@ -98,12 +88,4 @@
     margin: 0 5% 130px 5%;
     text-align: center;
   }
-
-  .errorBack {
-    // margin-bottom: 321px;
-  }
-}
-
-@media screen and (1201px <= width <= 1239px) {
-
 }

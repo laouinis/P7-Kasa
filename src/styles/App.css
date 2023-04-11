@@ -1212,7 +1212,7 @@ body {
 
 .errorBack {
   color: #FF6060;
-  margin-bottom: 100px;
+  margin-bottom: 118px;
 }
 
 @media screen and (280px <= width <= 375px) {
@@ -1231,6 +1231,7 @@ body {
 @media screen and (376px <= width <= 645px) {
   .error {
     margin-top: 60px;
+    margin-bottom: 199px;
   }
   .error_title {
     font-size: 96px;
