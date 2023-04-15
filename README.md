@@ -1,4 +1,7 @@
-### `npm start`
+### Clone repository.
+
+### `npm install`: to install project
+### `npm start`: to run project on port 3000
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
